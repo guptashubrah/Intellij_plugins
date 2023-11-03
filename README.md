@@ -20,7 +20,7 @@ How to build the plugin that we developed?
 
 
 
-Resources:
-https://www.youtube.com/watch?v=_VFbRlF_tp0<br>
+Resources:<br>
+https://www.youtube.com/watch?v=_VFbRlF_tp0 <br>
 https://www.freecodecamp.org/news/how-to-create-an-intellij-plugin-lets-build-a-simple-dictionary-finder-6c5192b449c/<br>
 
