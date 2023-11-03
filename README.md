@@ -12,7 +12,7 @@ How to run?
 
 How to build the plugin that we developed?
 1. Gradle(in the right, icon) -> Tasks -> intellij -> buildPlugin
-2. This will create a zip file for our plugin in the folder build -> distributions.
+2. This will create a zip file for our plugin in the folder build -> distributions. [Added the plugin zip in the repo with the name Example-1.0-SNAPSHOT.zip]
 3. If we want to apply this plugin to some other project (let's say Project Y) in a new instance of IntelliJ IDEA,
     go to File -> Settings -> Plugin -> Gear icon on the top of menu -> Install Plugin from disk -> Upload the zip created in previous step -> Install it there, and use       in the editor.
    
