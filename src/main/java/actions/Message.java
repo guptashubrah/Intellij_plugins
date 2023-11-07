@@ -22,7 +22,7 @@ public class Message extends AnAction {
             Editor editor = e.getData(CommonDataKeys.EDITOR);
             if (editor != null) {
                 PsiFile file = PsiDocumentManager.getInstance(project).getPsiFile(editor.getDocument());
-                if (file != null) {
+                if (file != null && file.getName().endsWith(".java")) {
                     // Generate your custom comment text
                     String comment = "// This is a custom comment";
 
@@ -35,5 +35,15 @@ public class Message extends AnAction {
                 }
             }
         }
+    }
+
+    @Override
+    public void update(AnActionEvent e) {
+        PsiFile file = e.getData(CommonDataKeys.PSI_FILE);
+
+
+        boolean isJavaFile = (file != null) && (file.getName().endsWith(".java"));
+        e.getPresentation().setEnabledAndVisible(isJavaFile);
+
     }
 }
