@@ -15,10 +15,9 @@ How to build the plugin that we developed?
 2. This will create a zip file for our plugin in the folder build -> distributions. [Added the plugin zip in the repo with the name Example-1.0-SNAPSHOT.zip]
 3. If we want to apply this plugin to some other project (let's say Project Y) in a new instance of IntelliJ IDEA,
     go to File -> Settings -> Plugin -> Gear icon on the top of menu -> Install Plugin from disk -> Upload the zip created in previous step -> Install it there, and use       in the editor.
-   
 
-
-
+Special case:
+Made changes to the plugin such that the plugin option on both tools and editor popup menu only shows in case of java file on the editor. For files other than java, the plugin option(gems) simply disappears.
 
 Resources:<br>
 https://www.youtube.com/watch?v=_VFbRlF_tp0 <br>
